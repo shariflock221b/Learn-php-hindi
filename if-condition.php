@@ -31,3 +31,4 @@ elseif ($per < 33):
 else :
     echo"Please enter the valid percentage";
 endif;
+
