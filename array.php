@@ -40,12 +40,20 @@ $emp = [
 // }
 
 
-echo "<table border='2px' cellpadding='5px' cellspacing='0'>";
+echo "<table border='2px' cellpadding='5px' cellspacing='0'>
 
-echo "<th>Emp ID.</th>";
-echo "<th>Emp Name.</th>";
-echo "<th>Emp Designation.</th>";
-echo "<th>Emp Salary.</th>";
+
+    <tr>
+        <th>Emp ID.</th>
+        <th>Emp Name.</th>
+        <th>Emp Designation.</th>
+        <th>Emp Salary.</th>
+    </tr>
+
+
+";
+
+
 
 foreach($emp as $v1) {
     echo "<tr>";
@@ -56,3 +64,62 @@ foreach($emp as $v1) {
 }
 
 echo "</table>";
+
+
+
+$marks = [
+
+     "Khairul" => [
+        "Bangla" => 90,
+        "English" => 80,
+        "Math" => 80
+     ],
+     "Alom" => [
+        "Bangla" => 40,
+        "English" => 60,
+        "Math" => 70
+     ],
+     
+     "Monjor" => [
+        "Bangla" => 90,
+        "English" => 40,
+        "Math" => 90
+     ],
+     
+     
+
+];
+
+
+echo "<table border='2px' cellpadding='5px' cellspacing='0'>
+
+    <tr>
+        <th>Student Name.</th>
+        <th> Bangla.</th>
+        <th> English.</th>
+        <th>Math</th>
+    
+    </tr>
+
+
+";
+
+foreach ($marks as $key => $v1){
+
+        echo " <tr>
+
+        <td> $key </td>";
+
+        foreach ($v1 as $v2) {
+            echo "<td> $v2 </td>";
+        }
+
+        echo "</tr>";
+}
+
+echo "</table>";
+
+
+
+
+
