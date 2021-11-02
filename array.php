@@ -177,7 +177,9 @@ $olors = array('red', 'green', 'yellow', 'pink');
 
 // array_pop($olors);
 
+
 array_push($olors, "olvile", "nice");
+
 
 
 echo "<pre>";
