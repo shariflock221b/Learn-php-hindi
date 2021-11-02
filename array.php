@@ -229,13 +229,24 @@
 // echo "</pre>";
 
 
-$lol1 = ['sharif', 'atic', 'majno'];
-$lol2 = [39,58,20];
+// $lol1 = ['sharif', 'atic', 'majno'];
+// $lol2 = [39,58,20];
 
 
-$lol5 = array_combine($lol1, $lol2);
+// $lol5 = array_combine($lol1, $lol2);
 
+
+// echo "<pre>";
+// print_r($lol5);
+// echo "</pre>";
+
+
+// Array slice
+
+$color = array('red', 'green', 'yellow', 'pink');
+// $newArray = array_slice($color, 1, 3);
+$newArray = array_slice($color,  -1);
 
 echo "<pre>";
-print_r($lol5);
+print_r($newArray);
 echo "</pre>";
