@@ -243,10 +243,12 @@
 
 // Array slice
 
-$color = array('red', 'green', 'yellow', 'pink');
+$color = array('red', 'green', 'yellow', 'pink', 'line');
+$col = array('lol-1', 'lol-2');
 // $newArray = array_slice($color, 1, 3);
-$newArray = array_slice($color,  -1);
+// $newArray = array_slice($color,  -1);
+array_splice($color, count($color), 2, $col );
 
 echo "<pre>";
-print_r($newArray);
+print_r($color);
 echo "</pre>";
