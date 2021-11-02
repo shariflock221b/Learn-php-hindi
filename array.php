@@ -24,13 +24,13 @@
 // echo $age ["bill"];
 
 
-$emp = [
-    [1, "lol-1", "manger", 50000],
-    [2, "lol-2", "manger", 10000],
-    [3, "lol-3", "manger", 40000],
-    [4, "lol-4", "manger", 20000],
-    [5, "lol-5", "manger", 70000]
-];
+// $emp = [
+//     [1, "lol-1", "manger", 50000],
+//     [2, "lol-2", "manger", 10000],
+//     [3, "lol-3", "manger", 40000],
+//     [4, "lol-4", "manger", 20000],
+//     [5, "lol-5", "manger", 70000]
+// ];
 
 // for($row = 0; $row < 4; $row++){
 //     for($col = 0; $col <pre 4; $col++){
@@ -40,84 +40,84 @@ $emp = [
 // }
 
 
-echo "<table border='2px' cellpadding='5px' cellspacing='0'>
+// echo "<table border='2px' cellpadding='5px' cellspacing='0'>
 
 
-    <tr>
-        <th>Emp ID.</th>
-        <th>Emp Name.</th>
-        <th>Emp Designation.</th>
-        <th>Emp Salary.</th>
-    </tr>
+//     <tr>
+//         <th>Emp ID.</th>
+//         <th>Emp Name.</th>
+//         <th>Emp Designation.</th>
+//         <th>Emp Salary.</th>
+//     </tr>
 
 
-";
-
-
-
-foreach($emp as $v1) {
-    echo "<tr>";
-    foreach($v1 as $v2) {
-        echo "<td> $v2 </td>";
-    }
-    echo "</tr>";
-}
-
-echo "</table>";
+// ";
 
 
 
-$marks = [
+// foreach($emp as $v1) {
+//     echo "<tr>";
+//     foreach($v1 as $v2) {
+//         echo "<td> $v2 </td>";
+//     }
+//     echo "</tr>";
+// }
 
-     "Khairul" => [
-        "Bangla" => 90,
-        "English" => 80,
-        "Math" => 80
-     ],
-     "Alom" => [
-        "Bangla" => 40,
-        "English" => 60,
-        "Math" => 70
-     ],
+// echo "</table>";
+
+
+
+// $marks = [
+
+//      "Khairul" => [
+//         "Bangla" => 90,
+//         "English" => 80,
+//         "Math" => 80
+//      ],
+//      "Alom" => [
+//         "Bangla" => 40,
+//         "English" => 60,
+//         "Math" => 70
+//      ],
      
-     "Monjor" => [
-        "Bangla" => 90,
-        "English" => 40,
-        "Math" => 90
-     ],
+//      "Monjor" => [
+//         "Bangla" => 90,
+//         "English" => 40,
+//         "Math" => 90
+//      ],
      
      
 
-];
+// ];
 
 
-echo "<table border='2px' cellpadding='5px' cellspacing='0'>
+// echo "<table border='2px' cellpadding='5px' cellspacing='0'>
 
-    <tr>
-        <th>Student Name.</th>
-        <th> Bangla.</th>
-        <th> English.</th>
-        <th>Math</th>
+//     <tr>
+//         <th>Student Name.</th>
+//         <th> Bangla.</th>
+//         <th> English.</th>
+//         <th>Math</th>
     
-    </tr>
+//     </tr>
 
 
-";
+// ";
 
-foreach ($marks as $key => $v1){
+// foreach ($marks as $key => $v1){
 
-        echo " <tr>
+//         echo " <tr>
 
-        <td> $key </td>";
+//         <td> $key </td>";
 
-        foreach ($v1 as $v2) {
-            echo "<td> $v2 </td>";
-        }
+//         foreach ($v1 as $v2) {
+//             echo "<td> $v2 </td>";
+//         }
 
-        echo "</tr>";
-}
+//         echo "</tr>";
+// }
 
-echo "</table>";
+// echo "</table>";
 
 
 // In-Array
@@ -142,62 +142,100 @@ echo "</table>";
 
 
 
-$foods = array( 'a' => 'orange', 'b'=> 'mango' ,'c'=> 'apple','d'=> 'banana');
+// $foods = array( 'a' => 'orange', 'b'=> 'mango' ,'c'=> 'apple','d'=> 'banana');
 
-echo array_search('apple', $foods);
-
-
-
-$colors = array('red', 'green', 'yellow', 'pink');
-
-$veggi = array('carron', 'mula', 'mink');
-
-$lol = array('sharif', 'laila', 'amin');
-
-$newArray = array_replace($colors, $veggi, $lol);
-
-echo "<pre>";
-print_r($newArray) ;
-
-echo "</pre>";
-
-$color = ['1' => 'red', 'a' => 'green', '3' => 'yellow'];
-
-$fol = ['1' => 'orange ', 'a' => 'banana', '3' => 'lol'];
-
-$nowAarray = array_replace_recursive($color, $fol);
-
-echo "<pre>";
-print_r($nowAarray);
-echo "</pre>";
-
-// Array pop/push
-
-$olors = array('red', 'green', 'yellow', 'pink');
-
-// array_pop($olors);
-
-
-array_push($olors, "olvile", "nice");
+// echo array_search('apple', $foods);
 
 
 
-echo "<pre>";
-print_r($olors);
-echo "</pre>";
+// // $colors = array('red', 'green', 'yellow', 'pink');
+
+// $veggi = array('carron', 'mula', 'mink');
+
+// $lol = array('sharif', 'laila', 'amin');
+
+// $newArray = array_replace($colors, $veggi, $lol);
+
+// echo "<pre>";
+// print_r($newArray) ;
+
+// echo "</pre>";
+
+// $color = ['1' => 'red', 'a' => 'green', '3' => 'yellow'];
+
+// $fol = ['1' => 'orange ', 'a' => 'banana', '3' => 'lol'];
+
+// $nowAarray = array_replace_recursive($color, $fol);
+
+// echo "<pre>";
+// print_r($nowAarray);
+// echo "</pre>";
+
+// // Array pop/push
+
+// $olors = array('red', 'green', 'yellow', 'pink');
+
+// // array_pop($olors);
+
+
+// array_push($olors, "olvile", "nice");
+
+
+
+// echo "<pre>";
+// print_r($olors);
+// echo "</pre>";
 
  
 // arry shift / unshift
 
 
-$lors = array('red', 'green', 'yellow', 'pink');
+// $lors = array('red', 'green', 'yellow', 'pink');
 
- //array_shift($lors);
+//  //array_shift($lors);
 
 
-array_unshift($lors, "olvile", "nice");
+// array_unshift($lors, "olvile", "nice");
+
+
+// echo "<pre>";
+// print_r($lors);
+// echo "</pre>";
+
+
+// Array merge and array combaine
+
+// $lol1 = ['sharif', 'atic', 'majno', 'sahin', 'rahman'];
+// $lol2 = ['sharif', 'malin', 'lol'];
+// $lol3 = ['fahin', 'laki', 'tarek', 'akia', 'rahi'];
+
+// $lol4 = array_merge($lol1, $lol3, $lol2);
+
+
+// echo "<pre>";
+// print_r($lol4);
+// echo "</pre>";
+
+// $color = ['a' => 'red', 'b' => 'green', 'c' => 'yellow'];
+
+// $fol = ['b' => 'orange ', 'e' => 'banana'];
+
+// //$lol5 = array_merge($color, $fol);
+// $lol5 = array_merge_recursive($color, $fol);
+
+
+// echo "<pre>";
+// print_r($lol5);
+// echo "</pre>";
+
+
+$lol1 = ['sharif', 'atic', 'majno'];
+$lol2 = [39,58,20];
+
+
+$lol5 = array_combine($lol1, $lol2);
 
 
 echo "<pre>";
-print_r($lors);
+print_r($lol5);
 echo "</pre>";
