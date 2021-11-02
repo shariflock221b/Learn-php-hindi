@@ -170,3 +170,32 @@ $nowAarray = array_replace_recursive($color, $fol);
 echo "<pre>";
 print_r($nowAarray);
 echo "</pre>";
+
+// Array pop/push
+
+$olors = array('red', 'green', 'yellow', 'pink');
+
+// array_pop($olors);
+
+array_push($olors, "olvile", "nice");
+
+
+echo "<pre>";
+print_r($olors);
+echo "</pre>";
+
+ 
+// arry shift / unshift
+
+
+$lors = array('red', 'green', 'yellow', 'pink');
+
+ //array_shift($lors);
+
+
+array_unshift($lors, "olvile", "nice");
+
+
+echo "<pre>";
+print_r($lors);
+echo "</pre>";
