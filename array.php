@@ -33,7 +33,7 @@ $emp = [
 ];
 
 // for($row = 0; $row < 4; $row++){
-//     for($col = 0; $col < 4; $col++){
+//     for($col = 0; $col <pre 4; $col++){
 //         echo $emp[$row][$col] . " ";
 //     }
 //     echo "<br>";
@@ -120,6 +120,53 @@ foreach ($marks as $key => $v1){
 echo "</table>";
 
 
+// In-Array
+
+// $foods = array('orange', 'mango' ,'apple', 44, 'banana');
+
+// // echo in_array('orange', $foods);
+
+// if(in_array(44, $foods, true)){
+//     echo "Find Successfully";
+// }else {
+//     echo "Not Find";
+// }
 
 
 
+// Array Search 
+
+// $foods = array('orange', 'mango' ,'apple', 44, 'banana');
+
+// echo array_search('apple', $foods);
+
+
+
+$foods = array( 'a' => 'orange', 'b'=> 'mango' ,'c'=> 'apple','d'=> 'banana');
+
+echo array_search('apple', $foods);
+
+
+
+$colors = array('red', 'green', 'yellow', 'pink');
+
+$veggi = array('carron', 'mula', 'mink');
+
+$lol = array('sharif', 'laila', 'amin');
+
+$newArray = array_replace($colors, $veggi, $lol);
+
+echo "<pre>";
+print_r($newArray) ;
+
+echo "</pre>";
+
+$color = ['1' => 'red', 'a' => 'green', '3' => 'yellow'];
+
+$fol = ['1' => 'orange ', 'a' => 'banana', '3' => 'lol'];
+
+$nowAarray = array_replace_recursive($color, $fol);
+
+echo "<pre>";
+print_r($nowAarray);
+echo "</pre>";
