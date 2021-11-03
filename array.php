@@ -290,17 +290,41 @@
 // echo array_product($lol4);
 
 
-$lol1 = ['sharif', 'atic', 'majno', 'sahin', 'rahman'];
+// $lol1 = ['sharif', 'atic', 'majno', 'sahin', 'rahman'];
 
-$newArray = array_rand($lol1);
+// // $newArray = array_rand($lol1);
 
-shuffle($lol1);
+
+// $newArray = array_fill_keys($lol1, 'testing');
+// // shuffle($lol1);
+
+// // echo "<pre>";
+// // print_r($newArray);
+// // echo "</pre>";
 
 // echo "<pre>";
 // print_r($newArray);
 // echo "</pre>";
 
-echo "<pre>";
-print_r($lol1);
-echo "</pre>";
+// $newArray = array_fill(1, 20, "testing");
+// echo "<pre>";
+// print_r($newArray);
+// echo "</pre>";
+
+
+$lol4 = ['a' => 'yellow', 'b' => 'blue', 'c' => 'red'];
+
+// array_walk($lol4,"myFunc");
+array_walk_recursive($lol4,"myFunc", "new site");
+
+
+function myFunc($value, $key, $site){
+    echo " $key $site $value <br>";
+}
+
+
+
+
+
+
 
