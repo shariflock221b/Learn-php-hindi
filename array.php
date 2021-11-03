@@ -312,19 +312,99 @@
 // echo "</pre>";
 
 
-$lol4 = ['a' => 'yellow', 'b' => 'blue', 'c' => 'red'];
+// $lol4 = ['a' => 'yellow', 'b' => 'blue', 'c' => 'red'];
 
-// array_walk($lol4,"myFunc");
-array_walk_recursive($lol4,"myFunc", "new site");
-
-
-function myFunc($value, $key, $site){
-    echo " $key $site $value <br>";
-}
+// // array_walk($lol4,"myFunc");
+// array_walk_recursive($lol4,"myFunc", "new site");
 
 
+// function myFunc($value, $key, $site){
+//     echo " $key $site $value <br>";
 
 
+// }
+
+// $a = [2, 4, 5, 5, 6,];
+// $b = ['sharif', 'atic', 'majno', 'sahin', 'rahman'];
+
+// function square($n, $m) {
+//    // return "$n for $m";
+//     //return [$n => $m];
+//     // return strtoupper($n);
+// }
+
+// //$newArray = array_map('square', $a, $b);
+// $newArray = array_map('square', $b);
+
+
+
+// echo "<pre>";
+// print_r($newArray);
+// echo "</pre>";
+
+
+
+// $b = ['sharif', 'atic', 'majno', 'sahin', 'rahman'];
+
+
+// function square($n, $m) {
+//     return $n . "-". $m;
+    
+// }
+
+// //$newArray = array_map('square', $a, $b);
+// $newArray = array_reduce( $b, 'square', 39);
+
+
+
+// echo "<pre>";
+// print_r($newArray);
+// echo "</pre>";
+
+
+$nam = ['sharif', 'atic', 'majno', 'sahin', 'rahman'];
+
+
+$nam = array(23, 24, 25, 34);
+
+list($a, $b, $c) = $nam;
+
+echo $a;
+
+
+// echo "<b>Current </b>" . current($b) . "<br>";
+// echo "<b>Key </b>" . key($b) . "<br>";
+// echo "<b>Pos </b>" . pos($b) . "<br>";
+
+// next($b);
+// echo "<b>Current </b>" . current($b) . "<br>";
+// prev($b);
+// echo "<b>Current </b>" . current($b) . "<br>";
+// reset($b);
+// echo "<b>Current </b>" . current($b) . "<br>";
+
+
+
+// //sort( $b);
+// rsort( $b);
+// ksort( $b);
+// array_multisort($b, $c);
+// array_reverse($b);
+
+
+
+// echo "<pre>";
+// print_r($b);
+// echo "</pre>";
+
+
+
+
+
+
+
+
+ 
 
 
 
