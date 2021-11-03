@@ -243,12 +243,42 @@
 
 // Array slice
 
-$color = array('red', 'green', 'yellow', 'pink', 'line');
-$col = array('lol-1', 'lol-2');
-// $newArray = array_slice($color, 1, 3);
-// $newArray = array_slice($color,  -1);
-array_splice($color, count($color), 2, $col );
+// $color = array('red', 'green', 'yellow', 'pink', 'line');
+// $col = array('lol-1', 'lol-2');
+// // $newArray = array_slice($color, 1, 3);
+// // $newArray = array_slice($color,  -1);
+// array_splice($color, count($color), 2, $col );
+
+// echo "<pre>";
+// print_r($color);
+// echo "</pre>";
+
+// $color = array('red', 'green', 'yellow', 'pink', 'line');
+
+// $newArray = array_key_first($color);
+
+
+// echo "<pre>";
+// print_r($newArray);
+// echo "</pre>";
+
+
+// $lol4 = ['a' => 'yellow', 'b' => 'blue', 'a' => 'red'];
+
+// $lol4 = ['a' => 'red', 'b' => 'blue', 'c' => 'yellow'];
+
+// $now = array_unique($lol4);
+
+// print_r($now);
+
+
+// ARRAY-FLIP/ARRAY-CHANGE-KEY-CASE
+
+$lol4 = ['a' => 'yellow', 'b' => 'blue', 'c' => 'red'];
+
+// $newArray = array_flip($lol4);
+$newArray = array_change_key_case($lol4, CASE_UPPER);
 
 echo "<pre>";
-print_r($color);
+print_r($newArray);
 echo "</pre>";
