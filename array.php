@@ -362,14 +362,14 @@
 // echo "</pre>";
 
 
-$nam = ['sharif', 'atic', 'majno', 'sahin', 'rahman'];
+// $nam = ['sharif', 'atic', 'majno', 'sahin', 'rahman'];
 
 
-$nam = array(23, 24, 25, 34);
+// $nam = array(23, 24, 25, 34);
 
-list($a, $b, $c) = $nam;
+// list($a, $b, $c) = $nam;
 
-echo $a;
+// echo $a;
 
 
 // echo "<b>Current </b>" . current($b) . "<br>";
@@ -397,14 +397,84 @@ echo $a;
 // print_r($b);
 // echo "</pre>";
 
+// $a = 'orange';
+
+// $lol4 = ['a' => 'yellow', 'b' => 'blue', 'c' => 'red'];
+// // extract($lol4);
+// // extract($, EXTR_OVERWRITE);
+// // extract($lol4, EXTR_SKIP);
+// extract($lol4, EXTR_PREFIX_SAME, 'test');
+
+
+// echo "new value a : $a <br>";
+
+// $a = 'shariful';
+// $b = 'islam';
+// $c = 30;
+// $d = 'india';
+
+// $now = ['c', 'd'];
+
+// $newArray = compact('a', 'b', $now);
+
+// print_r($newArray);
+
+
+// $n = range(2, 200, 20);
+
+// print_r($n);
 
 
 
+// $str = 'I am shariful islam , i am a student';
+
+// $newArray = explode(" ", $str, 3);
+
+// echo "<pre>";
+
+// print_r($newArray);
+
+// echo "</pre>";
 
 
+// $nam = ['sharif', 'atic', 'majno', 'sahin', 'rahman'];
+
+// $now = implode(' ', $nam);
+
+// echo $now;
 
 
+// $str = "I am sharif";
+
+// // $array = str_split($str);
+// $array = chunk_split($str, 3, "...");
+
+// echo "<pre>";
+
+// print_r($array);
+
+// echo "</pre>";
+
+// $lo = "I am shariful islam";
+
+// $nn = strtolower($lo);
+// echo $nn;
+
+// $nam = "i am sharif";
+
+// // echo strlen($nam);
+// // echo str_word_count($nam);
+// // echo substr_count($nam, "i");
+
+
+// echo strpos($nam, 'am', 2);
  
 
 
+ $nam = "lo am sharif";
 
+ $find = ['lo', 'am', 'sharif'];
+ $replace = ['h', 'ro', 'red'];
+
+
+ echo str_replace($find, $replace, $nam);
