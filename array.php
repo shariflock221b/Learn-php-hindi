@@ -274,11 +274,33 @@
 
 // ARRAY-FLIP/ARRAY-CHANGE-KEY-CASE
 
-$lol4 = ['a' => 'yellow', 'b' => 'blue', 'c' => 'red'];
+// $lol4 = ['a' => 'yellow', 'b' => 'blue', 'c' => 'red'];
 
-// $newArray = array_flip($lol4);
-$newArray = array_change_key_case($lol4, CASE_UPPER);
+// // $newArray = array_flip($lol4);
+// $newArray = array_change_key_case($lol4, CASE_UPPER);
+
+// echo "<pre>";
+// print_r($newArray);
+// echo "</pre>";
+
+
+// $lol4 = ['a' => '2', 'b' => '5', 'c' => '6'];
+
+// // echo array_sum($lol4);
+// echo array_product($lol4);
+
+
+$lol1 = ['sharif', 'atic', 'majno', 'sahin', 'rahman'];
+
+$newArray = array_rand($lol1);
+
+shuffle($lol1);
+
+// echo "<pre>";
+// print_r($newArray);
+// echo "</pre>";
 
 echo "<pre>";
-print_r($newArray);
+print_r($lol1);
 echo "</pre>";
+
