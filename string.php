@@ -58,7 +58,11 @@
 
 // echo $decode;
 
- $not = bin2hex("hellow world") . "<br>";
+ $not = hex2bin("hellow world") . "<br>";
 
 echo $not;
 echo hex2bin($not);
+
+$lol = chr(3);
+$lol = ord("A");
+echo $lol;
