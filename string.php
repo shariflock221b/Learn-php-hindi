@@ -43,9 +43,17 @@
 // echo chop($str, "Ya");
 
 
-$str = "hellow";
-echo "the string : " . $str . "<br></br>";
-echo "the Binary : " . md5($str, true ). "<br></br>";
-echo "the hex : " . md5($str). "<br></br>";
-echo "the Binary : " . sha1($str, true ). "<br></br>";
-echo "the Binary : " . sha1($str ). "<br></br>";
+$str = "hellow world";
+
+// echo "the string : " . $str . "<br></br>";
+// echo "the Binary : " . md5($str, true ). "<br></br>";
+// echo "the hex : " . md5($str). "<br></br>";
+// echo "the Binary : " . sha1($str, true ). "<br></br>";
+// echo "the Binary : " . sha1($str ). "<br></br>";
+
+
+$encode = convert_uuencode($str)."<br>";
+echo $encode . "<br>";
+$decode = convert_uudecode($encode);
+
+echo $decode;
