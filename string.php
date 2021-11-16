@@ -79,26 +79,66 @@
 
 // echo "</pre>";
 
-echo (ceil(0.60). "<br>");
-echo (ceil(0.40). "<br>");
-echo (ceil(5). "<br>");
-echo (ceil(5.1). "<br>");
-echo (ceil(-5.1). "<br>");
+// echo (ceil(0.60). "<br>");
+// echo (ceil(0.40). "<br>");
+// echo (ceil(5). "<br>");
+// echo (ceil(5.1). "<br>");
+// echo (ceil(-5.1). "<br>");
 
-echo (floor(0.60). "<br>");
-echo (floor(0.40). "<br>");
-echo (floor(5). "<br>");
-echo (floor(5.1). "<br>");
-echo (floor(-5.1). "<br>");
+// echo (floor(0.60). "<br>");
+// echo (floor(0.40). "<br>");
+// echo (floor(5). "<br>");
+// echo (floor(5.1). "<br>");
+// echo (floor(-5.1). "<br>");
 
-echo (round(0.60). "<br>");
-echo (round(0.40). "<br>");
-echo (round(5). "<br>");
-echo (round(5.1). "<br>");
-echo (round(-5.1). "<br>");
+// echo (round(0.60). "<br>");
+// echo (round(0.40). "<br>");
+// echo (round(5). "<br>");
+// echo (round(5.1). "<br>");
+// echo (round(-5.1). "<br>");
 
-echo (abs(0.60). "<br>");
-echo (abs(0.40). "<br>");
-echo (abs(5). "<br>");
-echo (abs(5.1). "<br>");
-echo (abs(-5.1). "<br>");
+// echo (abs(0.60). "<br>");
+// echo (abs(0.40). "<br>");
+// echo (abs(5). "<br>");
+// echo (abs(5.1). "<br>");
+// echo (abs(-5.1). "<br>");
+
+
+// echo sqrt(5);
+// echo pow(5, 4);
+
+
+// echo rand()."<br>";
+// echo mt_rand()."<br>";
+// echo lcg_value();
+
+// echo "Full Date : " . date("D-M-Y"). "<br>";
+// echo "Full Date : " . date("d-m-y"). "<br>";
+// echo "Full Date : " . date("N"). "<br>";
+// echo "Full Date : " . date("w"). "<br>";
+// echo "Full Date : " . date("W"). "<br>";
+// echo "Day of Month : " . date("t"). "<br>";
+// echo "Day is : " . date("z");
+
+// echo "Hour is : " . date("h"). "<br>";
+// echo "Minutes is : " . date("i"). "<br>";
+// echo "Second is : " . date("s"). "<br>";
+// echo "Meridium is : " . date("A"). "<br>";
+// echo "Meridium is : " . date("a"). "<br>";
+
+// echo "Time is : " . date("h:i:a e") ."<br>";
+
+// echo "Time is : " . date(" d-m-y h:i:a e")."<br>";
+
+// date_default_timezone_set("Asia/Dhaka")."<br>";
+// echo "Time is : " . date(" d-m-y h:i:a e")."<br>";
+
+
+// echo date ("l", mktime(0,0,0,10, 13, 2003))."<br>";
+// echo date ("d-m-y", mktime(0,0,0,10, 13, 2003))."<br>";
+// echo date ("h-i-s", mktime(0,0,0,10, 13, 2003))."<br>";
+// echo date ("h-i-s d-m-y", gmmktime(0,0,0,10, 13, 2003));
+
+
+$date = date_create("2024-03-23 22:34:00");
+echo date_format($date, "d/m/y H:i:s e");
