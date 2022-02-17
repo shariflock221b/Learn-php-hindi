@@ -89,4 +89,28 @@
 
 
 //echo file_put_contents("readme.txt", "This is testing test", FILE_APPEND || LOCK_EX);
-echo file_get_contents("readme.txt", FALSE,NULL,0,100);
+//echo file_get_contents("readme.txt", FALSE,NULL,0,100);
+
+// echo "<pre>";
+
+// print_r(glob("*.txt"));
+// print_r(glob("*"));
+// print_r(glob("t*"));
+
+// echo "</pre>";
+
+
+// $ary = glob("*");
+
+// foreach($ary as $filename) {
+//     echo "{$filename} size : " . filesize($filename) . "<br>";
+// }
+// foreach($ary as $filename) {
+//     echo "{$filename} path : " . realpath($filename) . "<br>";
+// }
+
+echo "<pre>";
+
+print_r(glob("*", GLOB_MARK));
+
+echo "</pre>";
