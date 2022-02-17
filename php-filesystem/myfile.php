@@ -32,7 +32,7 @@
 //echo realpath($file);
 //echo pathinfo($file);
 
-$file = fopen("readme.txt", "a+");
+// $file = fopen("readme.txt", "a+");
 
 // // echo fread($file, 50);
 // // echo fread($file, filesize("readme.txt"));
@@ -52,30 +52,41 @@ $file = fopen("readme.txt", "a+");
 //  echo "</ul>";
 
 // fwrite($file, "\nHere is new line");
-ftruncate($file, 50);
+// ftruncate($file, 50);
 
-if(is_file("readme.txt")){
-    echo "Yes it is file";
-}else {
-    echo "No it is not a file";
-}
-echo "<br>";
-if(is_dir("readme.txt")){
-    echo "Yes it is Folder";
-}else {
-    echo "No it is not a Folder";
-}
+// if(is_file("readme.txt")){
+//     echo "Yes it is file";
+// }else {
+//     echo "No it is not a file";
+// }
+// echo "<br>";
+// if(is_dir("readme.txt")){
+//     echo "Yes it is Folder";
+// }else {
+//     echo "No it is not a Folder";
+// }
 
-echo "<br>";
-if(is_writeable("readme.txt")){
-    echo "Yes it is writeable";
-}else {
-    echo "No it is not a writeable";
-}
+// echo "<br>";
+// if(is_writeable("readme.txt")){
+//     echo "Yes it is writeable";
+// }else {
+//     echo "No it is not a writeable"; 
+// }
 
-echo "<br>";
-if(is_executable("readme.txt")){
-    echo "Yes it is executable";
-}else {
-    echo "No it is not a executable";
-}
+// echo "<br>";
+// if(is_executable("readme.txt")){
+//     echo "Yes it is executable";
+// }else {
+//     echo "No it is not a executable";
+// }
+
+
+// echo fileperms("readme.txt");
+// echo "<br>";
+// echo decoct(fileperms("readme.txt"));
+// echo "<br>";
+// echo substr(decoct(fileperms("readme.txt")), 2);
+
+
+//echo file_put_contents("readme.txt", "This is testing test", FILE_APPEND || LOCK_EX);
+echo file_get_contents("readme.txt", FALSE,NULL,0,100);
