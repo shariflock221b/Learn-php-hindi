@@ -109,8 +109,30 @@
 //     echo "{$filename} path : " . realpath($filename) . "<br>";
 // }
 
-echo "<pre>";
+// echo "<pre>";
 
-print_r(glob("*", GLOB_MARK));
+// print_r(glob("*", GLOB_MARK));
 
-echo "</pre>";
+// echo "</pre>";
+
+// echo getcwd();
+// chdir("css");
+
+// $dir = "..";
+
+// echo "<pre>";
+
+// print_r(scandir($dir));
+
+// echo "</pre>";
+
+$dir = ".";
+
+if(is_dir($dir)){
+    if($d = opendir($dir)){
+        while($file = readdir($d)) {
+            echo "filename : " . $file . "<br>";
+        }
+        closedir($d);
+    }
+}
