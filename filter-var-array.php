@@ -24,4 +24,4 @@ echo" <pre>";
 //print_r($arr);
 print_r(filter_var_array($arr, $filters));
 
-echo "</pre>";
+echo "</pre>"; 
